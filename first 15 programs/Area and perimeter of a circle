@@ -1,0 +1,15 @@
+ class Area
+ {
+   public static void main(String args[])
+   { 
+   double r = 7.5d;
+   double area = 3.14* r * r;
+   double  peri = 2 * 3.14* r;
+   System.out.println("area of circle"+area);
+   System.out.println("perimeter of circle"+peri);
+   }
+ }
+Output
+area of circle176.625
+perimeter of circle47.1
+
