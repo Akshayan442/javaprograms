@@ -1,0 +1,37 @@
+
+
+ class Large
+ {
+   public static void main(String args[])
+   { 
+     int a = 10;
+     int b = 5;
+     int c = 20;
+     if (a>b)
+      if (a>c)
+     {
+       System.out.println("a is larger");
+     }
+       else
+       {
+       System.out.println("c is larger");
+     }
+      
+      
+       else
+        {
+         if (b>c){
+      
+           System.out.println("b is larger");
+           }
+           else 
+           {
+           System.out.println("c is larger");
+           }
+       }
+     
+   }
+  
+ }
+Output
+c is larger
