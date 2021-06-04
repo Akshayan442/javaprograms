@@ -1,0 +1,59 @@
+class Product {
+    String pcode;
+    String pname;
+    double price;
+
+    void SetValues(String pc, String n, double p) {
+        pcode = pc;
+        pname = n;
+        price = p;
+    }
+
+    String FindLowestPrice(Product p1, Product p2) {
+        if (p1.price < p2.price && p1.price < price)
+            return p1.pname;
+        if (p2.price < p1.price && p2.price < price)
+            return p2.pname;
+        else
+            return pname;
+    }
+}
+
+class Productdemo {
+    public static void main(String[] args) {
+        Product p1 = new Product();
+        Product p2 = new Product();
+        Product p3 = new Product();
+
+        String lname;
+
+        p1.SetValues("P1", "SOAP", 40);
+
+        p2.SetValues("P2", "PEN", 13);
+
+        p3.SetValues("P3", "BOOK", 20);
+
+        lname = p3.FindLowestPrice(p1, p2);
+
+        System.out.println("\nProduct having lowest price is : " + lname + "\n");
+
+    }
+}
+
+output
+
+Microsoft Windows [Version 10.0.18363.1440]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\User>cd\
+
+C:\>cd javaprogram
+
+C:\javaprogram>javac Productdemo.java
+
+C:\javaprogram>java Productdemo
+
+Product having lowest price is : PEN
+
+
+C:\javaprogram>
