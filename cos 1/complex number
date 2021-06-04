@@ -1,0 +1,51 @@
+class Add{
+    double real;
+    double image;
+
+    void setValues(double r, double i) {
+        real = r;
+        image = i;
+    }
+
+    void addition(Add c1) {
+        System.out.println("Resulting Complex number : " + (real + c1.real) + "+" + (image + c1.image) + "i");
+    }
+}
+
+ class Complexdemo {
+    public static void main(String[] str) {
+
+        Add c1 = new Add();
+        Add c2 = new Add();
+
+        c1.setValues(4, 1);
+        c2.setValues(5, 1);
+
+        c2.addition(c1);
+
+    }
+}
+
+output
+
+Microsoft Windows [Version 10.0.18363.1440]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\User>cd\
+
+C:\>cd javaprogram
+
+C:\javaprogram>javac Complexdemo.java
+
+C:\javaprogram>java Complexdemo
+Resulting Complex number : 9.0+2.0i
+
+C:\javaprogram>
+
+
+
+
+
+
+
+
