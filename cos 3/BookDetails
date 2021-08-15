@@ -1,0 +1,246 @@
+import java.util.*;
+
+abstract class Publisher {
+
+    abstract void PublisherDetails(Scanner read);
+
+}
+
+class Book extends Publisher {
+    String Title, Author, pname, pdate;
+
+    void PublisherDetails(Scanner read) {
+        System.out.print("Enter the name of publisher : ");
+        pname = read.nextLine();
+        System.out.print("Enter the published date : ");
+        pdate = read.nextLine();
+    }
+
+    Book(Scanner read) {
+        System.out.print("\nEnter the Title of book : ");
+        Title = read.nextLine();
+        System.out.print("Enter the Author name : ");
+        Author = read.nextLine();
+    }
+}
+
+class Literature extends Book {
+
+    String Category = "Literature";
+
+    Literature(Scanner read) {
+        super(read);
+        PublisherDetails(read);
+    }
+
+    void display() {
+        System.out.println("\tPublisher name: " + pname);
+        System.out.println("\t\t\tPublished date: " + pdate);
+        System.out.println("\t\t\tBook title: " + Title);
+        System.out.println("\t\t\tAuther: " + Author);
+        System.out.println("\t\t\tCategory: " + Category);
+    }
+}
+
+class Fiction extends Book {
+    String Category = "Fiction";
+
+    Fiction(Scanner read) {
+        super(read);
+        PublisherDetails(read);
+    }
+
+    void display() {
+        System.out.println("\tPublisher name: " + pname);
+        System.out.println("\t\t\tPublished date: " + pdate);
+        System.out.println("\t\t\tBook title: " + Title);
+        System.out.println("\t\t\tAuther: " + Author);
+        System.out.println("\t\t\tCategory: " + Category);
+    }
+
+}
+
+public class import java.util.*;
+
+abstract class Publisher {
+
+    abstract void PublisherDetails(Scanner read);
+
+}
+
+class Book extends Publisher {
+    String Title, Author, pname, pdate;
+
+    void PublisherDetails(Scanner read) {
+        System.out.print("Enter the name of publisher : ");
+        pname = read.nextLine();
+        System.out.print("Enter the published date : ");
+        pdate = read.nextLine();
+    }
+
+    Book(Scanner read) {
+        System.out.print("\nEnter the Title of book : ");
+        Title = read.nextLine();
+        System.out.print("Enter the Author name : ");
+        Author = read.nextLine();
+    }
+}
+
+class Literature extends Book {
+
+    String Category = "Literature";
+
+    Literature(Scanner read) {
+        super(read);
+        PublisherDetails(read);
+    }
+
+    void display() {
+        System.out.println("\tPublisher name: " + pname);
+        System.out.println("\t\t\tPublished date: " + pdate);
+        System.out.println("\t\t\tBook title: " + Title);
+        System.out.println("\t\t\tAuther: " + Author);
+        System.out.println("\t\t\tCategory: " + Category);
+    }
+}
+
+class Fiction extends Book {
+    String Category = "Fiction";
+
+    Fiction(Scanner read) {
+        super(read);
+        PublisherDetails(read);
+    }
+
+    void display() {
+        System.out.println("\tPublisher name: " + pname);
+        System.out.println("\t\t\tPublished date: " + pdate);
+        System.out.println("\t\t\tBook title: " + Title);
+        System.out.println("\t\t\tAuther: " + Author);
+        System.out.println("\t\t\tCategory: " + Category);
+    }
+
+}
+
+public class BookDetails {
+    public static void main(String[] args) {
+        int flimit,llimit,i;
+        Scanner read = new Scanner(System.in);
+        System.out.print("Enter the number of Fiction books you want to insert: ");
+        flimit = read.nextInt();
+        read.nextLine();
+        Fiction[] f = new Fiction[flimit];
+        for (i = 0; i < flimit; i++) {
+            f[i] = new Fiction(read);
+        }
+        System.out.print("\nEnter the number of Literature books you want to insert: ");
+        llimit = read.nextInt();    
+        read.nextLine();
+        Literature[] l = new Literature[llimit];
+        for (i = 0; i < llimit; i++) {
+            l[i] = new Literature(read);
+        }
+        System.out.println("\n\t\t\tDetails of Literatures");
+        System.out.println("\t\t__________________________________");
+        for(i=0;i<l.length;i++){
+            System.out.print("\n\tBook "+(i+1)+" ->");
+            l[i].display();
+        }
+        System.out.println("\t\t__________________________________");
+        System.out.println("\n\t\t\tDetails of Fiction");
+        System.out.println("\t\t__________________________________");
+        for(i=0;i<f.length;i++){
+            System.out.print("\n\tBook "+(i+1)+" ->");
+            f[i].display();
+        }
+    }
+} {
+    public static void main(String[] args) {
+        int flimit,llimit,i;
+        Scanner read = new Scanner(System.in);
+        System.out.print("Enter the number of Fiction books you want to insert: ");
+        flimit = read.nextInt();
+        read.nextLine();
+        Fiction[] f = new Fiction[flimit];
+        for (i = 0; i < flimit; i++) {
+            f[i] = new Fiction(read);
+        }
+        System.out.print("\nEnter the number of Literature books you want to insert: ");
+        llimit = read.nextInt();    
+        read.nextLine();
+        Literature[] l = new Literature[llimit];
+        for (i = 0; i < llimit; i++) {
+            l[i] = new Literature(read);
+        }
+        System.out.println("\n\t\t\tDetails of Literatures");
+        System.out.println("\t\t__________________________________");
+        for(i=0;i<l.length;i++){
+            System.out.print("\n\tBook "+(i+1)+" ->");
+            l[i].display();
+        }
+        System.out.println("\t\t__________________________________");
+        System.out.println("\n\t\t\tDetails of Fiction");
+        System.out.println("\t\t__________________________________");
+        for(i=0;i<f.length;i++){
+            System.out.print("\n\tBook "+(i+1)+" ->");
+            f[i].display();
+        }
+    }
+}
+
+
+output
+
+C:\javaprogram>javac OverLoading.java
+error: file not found: OverLoading.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+C:\javaprogram>javac BookDetails.java
+
+C:\javaprogram>java BookDetails
+Enter the number of Fiction books you want to insert: 2
+
+Enter the Title of book : she
+Enter the Author name : deb
+Enter the name of publisher : deb
+Enter the published date : 1897
+
+Enter the Title of book : jan eyra
+Enter the Author name : charl
+Enter the name of publisher : charl
+Enter the published date : 1847
+
+Enter the number of Literature books you want to insert: 1
+
+Enter the Title of book : she
+Enter the Author name : deb
+Enter the name of publisher : deb
+Enter the published date : 1897
+
+                        Details of Literatures
+                __________________________________
+
+        Book 1 ->       Publisher name: deb
+                        Published date: 1897
+                        Book title: she
+                        Auther: deb
+                        Category: Literature
+                __________________________________
+
+                        Details of Fiction
+                __________________________________
+
+        Book 1 ->       Publisher name: deb
+                        Published date: 1897
+                        Book title: she
+                        Auther: deb
+                        Category: Fiction
+
+        Book 2 ->       Publisher name: charl
+                        Published date: 1847
+                        Book title: jan eyra
+                        Auther: charl
+                        Category: Fiction
+
+C:\javaprogram>
