@@ -86,7 +86,6 @@ public class AreaUsingInterface {
 output
 
 
-
 C:\javaprogram>javac AreaUsingInterface.java
 
 C:\javaprogram>java AreaUsingInterface
@@ -104,4 +103,72 @@ _______________OPTIONS_______________
 3. Area of the rectangle
 4. Perimeter of the rectangle
 5. Exit
+_____________________________________
+
+Please choose your option: 1
+
+Area of the Circle is: 50.24
+
+_____________________________________
+
+_______________OPTIONS_______________
+
+1. Area of the circle
+2. Perimeter of the circle
+3. Area of the rectangle
+4. Perimeter of the rectangle
+5. Exit
+_____________________________________
+
+Please choose your option: 2
+
+Perimeter of the Circle is: 25.12
+
+_____________________________________
+
+_______________OPTIONS_______________
+
+1. Area of the circle
+2. Perimeter of the circle
+3. Area of the rectangle
+4. Perimeter of the rectangle
+5. Exit
+_____________________________________
+
+Please choose your option: 3
+
+Area of the Rectangle is: 6.0
+
+
+_____________________________________
+
+_______________OPTIONS_______________
+
+1. Area of the circle
+2. Perimeter of the circle
+3. Area of the rectangle
+4. Perimeter of the rectangle
+5. Exit
+_____________________________________
+
+Please choose your option: 4
+
+Perimeter of the Rectangle is: 10.0
+
+
+_____________________________________
+
+_______________OPTIONS_______________
+
+1. Area of the circle
+2. Perimeter of the circle
+3. Area of the rectangle
+4. Perimeter of the rectangle
+5. Exit
+_____________________________________
+
+Please choose your option: 5
+
+Exiting!!!
+
 _____________________________________
