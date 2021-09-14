@@ -25,7 +25,7 @@ class Authentication {
 public class AuthenticateUser {
     public static void main(String[] args) {
         try {
-            Authentication A = new Authentication("Samuel", "Sam@123");
+            Authentication A = new Authentication("Akshaya", "akshaya12");
             System.out.println("\n\t\t\t*Successfull\n");
         } catch (AuthenticationException e) {
             System.out.println("\n\t\t\tAuthenticationException: " + e);
